@@ -11,7 +11,7 @@ const config = {
   jsxSingleQuote: true,
   bracketSpacing: true,
   bracketSameLine: false,
-  arrowParens: avoid,
+  arrowParens: 'avoid',
   requirePragma: false,
   insertPragma: false,
   proseWrap: 'preserve',
