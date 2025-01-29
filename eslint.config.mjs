@@ -10,7 +10,10 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import unusedImports from 'eslint-plugin-unused-imports';
 import stylistic from '@stylistic/eslint-plugin';
 
-export default [
+/**
+ * @type {import('eslint').Linter.Config}
+ */
+const config = [
   js.configs.recommended,
   prettierConfig,
   {
@@ -206,6 +209,8 @@ export default [
     },
   },
   {
-    ignores: ['**/node_modules/**', '**/dist/**'],
+    ignores: ['**/node_modules/**', '**/dist/**', '**/build/**', '**/public/**', '**/.next/**'],
   },
 ];
+
+export default config;

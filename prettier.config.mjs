@@ -18,7 +18,7 @@ const config = {
   htmlWhitespaceSensitivity: 'css',
   endOfLine: 'lf',
   embeddedLanguageFormatting: 'auto',
-  singleAttributePerLine: true
-}
+  singleAttributePerLine: true,
+};
 
 export default config;

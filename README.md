@@ -34,7 +34,7 @@ import eslintConfig from '@tapie-kr/code-guideline/eslint';
 export default eslintConfig;
 ```
 
-2. Create or update your `prettier.config.mjs` file to extend the TAPIE Prettier configuration:
+2. Create or update your `prettier.config.mjs` or `.prettierrc.mjs` file to extend the TAPIE Prettier configuration:
 
 ```js
 import prettierConfig from '@tapie-kr/code-guideline/prettier';
