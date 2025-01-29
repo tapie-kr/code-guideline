@@ -1,6 +1,6 @@
 {
   "name": "@tapie-kr/code-guideline",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "TAPIE Code Style Standards",
   "scripts": {
     "build": "rimraf dist && tsup",
