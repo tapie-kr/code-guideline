@@ -18,7 +18,7 @@
     "source.fixAll.eslint": "explicit"
   },
   "prettier.enable": true,
-  "prettier.configPath": "./.prettierrc",
+  "prettier.configPath": "./prettier.config.mjs",
   "prettier.ignorePath": ".prettierignore",
   "eslint.enable": true,
   "eslint.format.enable": false,

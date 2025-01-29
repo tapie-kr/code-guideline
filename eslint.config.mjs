@@ -8,7 +8,7 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import unusedImports from 'eslint-plugin-unused-imports';
-import removeReactFragment from './plugins/remove-react-fragment.mjs';
+import stylistic from '@stylistic/eslint-plugin';
 
 export default [
   js.configs.recommended,
@@ -28,13 +28,13 @@ export default [
     },
     plugins: {
       '@typescript-eslint': typescript,
+      '@stylistic': stylistic,
       react: reactPlugin,
       'react-hooks': reactHooks,
       'jsx-a11y': jsxA11y,
       import: importPlugin,
       'simple-import-sort': simpleImportSort,
       'unused-imports': unusedImports,
-      'remove-react-fragment': removeReactFragment,
     },
     settings: {
       react: {
@@ -135,10 +135,29 @@ export default [
         },
       ],
       'react/jsx-fragments': ['error', 'syntax'],
+      'react/jsx-no-useless-fragment': 'error',
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'error',
 
-      'remove-react-fragment/remove-react-fragment': 'error',
+      '@stylistic/no-extra-parens': 'error',
+      '@stylistic/jsx-closing-bracket-location': ['error', 'tag-aligned'],
+      '@stylistic/jsx-closing-tag-location': ['error', 'tag-aligned'],
+      '@stylistic/jsx-curly-brace-presence': [
+        'error',
+        {
+          props: 'never',
+          children: 'never',
+          propElementValues: 'always',
+        },
+      ],
+      '@stylistic/jsx-sort-props': [
+        'error',
+        {
+          callbacksLast: true,
+          noSortAlphabetically: true,
+          reservedFirst: true,
+        },
+      ],
 
       'simple-import-sort/imports': [
         'error',

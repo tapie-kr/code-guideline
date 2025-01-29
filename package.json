@@ -1,6 +1,6 @@
 {
   "name": "@tapie-kr/code-guideline",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TAPIE Code Style Standards",
   "scripts": {
     "test": "node tests/main.mjs",
@@ -23,6 +23,7 @@
     "prettier": "^3.4.2"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^3.0.0",
     "tsup": "^8.3.6"
   },
   "dependencies": {
