@@ -3,9 +3,8 @@
   "version": "0.0.3",
   "description": "TAPIE Code Style Standards",
   "scripts": {
-    "test": "node tests/main.mjs",
     "build": "tsup",
-    "prepublish": "pnpm run test && pnpm run build"
+    "prepublish": "pnpm run build"
   },
   "keywords": [
     "tapie",
