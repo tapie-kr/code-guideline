@@ -1,9 +1,9 @@
 {
   "name": "@tapie-kr/code-guideline",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "TAPIE Code Style Standards",
   "scripts": {
-    "build": "tsup",
+    "build": "rimraf dist && tsup",
     "prepublish": "pnpm run build"
   },
   "keywords": [
@@ -22,11 +22,12 @@
     "prettier": "^3.4.2"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^3.0.0",
+    "rimraf": "^6.0.1",
     "tsup": "^8.3.6"
   },
   "dependencies": {
     "@eslint/compat": "^1.2.5",
+    "@stylistic/eslint-plugin": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
     "eslint-config-prettier": "^10.0.1",
@@ -52,10 +53,12 @@
   },
   "exports": {
     "./eslint": {
+      "types": "./dist/eslint.config.d.ts",
       "import": "./dist/eslint.config.mjs",
       "require": "./dist/eslint.config.cjs"
     },
     "./prettier": {
+      "types": "./dist/prettier.config.d.ts",
       "import": "./dist/prettier.config.mjs",
       "require": "./dist/prettier.config.cjs"
     },
