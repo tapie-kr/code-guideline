@@ -142,7 +142,7 @@ const config = [
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'error',
 
-      '@stylistic/no-extra-parens': 'error',
+      '@stylistic/no-extra-parens': ['error', 'all', { ignoreJSX: 'multi-line' }],
       '@stylistic/jsx-closing-bracket-location': ['error', 'tag-aligned'],
       '@stylistic/jsx-closing-tag-location': ['error', 'tag-aligned'],
       '@stylistic/jsx-curly-brace-presence': [
