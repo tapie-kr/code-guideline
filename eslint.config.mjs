@@ -104,7 +104,7 @@ const config = [
       'react/jsx-handler-names': [
         'error',
         {
-          eventHandlerPrefix: ['handle', 'on'],
+          eventHandlerPrefix: 'handle',
           eventHandlerPropPrefix: 'on',
           checkLocalVariables: true,
           checkInlineFunction: false,
