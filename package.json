@@ -1,48 +1,15 @@
 {
-  "name": "@tapie-kr/code-guideline",
-  "version": "0.0.8",
+  "name": "code-guideline",
+  "version": "1.0.0",
   "description": "TAPIE Code Style Standards",
-  "scripts": {
-    "build": "rimraf dist && tsup",
-    "prepublish": "pnpm run build",
-    "format": "npm run lint && npm run prettier",
-    "prettier": "prettier --write . --log-level warn",
-    "lint": "eslint . --fix",
-    "lint:dry": "eslint . --fix-dry-run"
-  },
   "keywords": [
     "tapie",
-    "code",
-    "style",
-    "standards",
+    "lint",
     "eslint",
-    "prettier",
+    "javascript",
     "typescript",
-    "react",
-    "rules"
+    "react"
   ],
-  "peerDependencies": {
-    "eslint": "^9.19.0",
-    "prettier": "^3.4.2"
-  },
-  "devDependencies": {
-    "rimraf": "^6.0.1",
-    "tsup": "^8.3.6"
-  },
-  "dependencies": {
-    "@eslint/compat": "^1.2.5",
-    "@stylistic/eslint-plugin": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.22.0",
-    "@typescript-eslint/parser": "^8.22.0",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-import-resolver-typescript": "^3.7.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-unused-imports": "^4.1.4"
-  },
   "author": {
     "name": "Taeyeong Kim",
     "email": "taeyeong.kim@algorix.io",
@@ -55,27 +22,5 @@
     "type": "git",
     "url": "https://github.com/tapie-kr/code-guideline.git"
   },
-  "exports": {
-    "./eslint": {
-      "types": "./dist/eslint.config.d.ts",
-      "import": "./dist/eslint.config.mjs",
-      "require": "./dist/eslint.config.cjs"
-    },
-    "./prettier": {
-      "types": "./dist/prettier.config.d.ts",
-      "import": "./dist/prettier.config.mjs",
-      "require": "./dist/prettier.config.cjs"
-    },
-    "./*": {
-      "import": "./dist/*",
-      "require": "./dist/*"
-    }
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "dist"
-  ],
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }

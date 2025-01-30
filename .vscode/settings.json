@@ -6,21 +6,22 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "**/node_modules": false
+    "**/node_modules": true
   },
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "editor.codeActionsOnSave": {
     "source.organizeImports": "never",
     "source.fixAll.eslint": "explicit"
   },
-  "prettier.enable": true,
-  "prettier.configPath": "./prettier.config.mjs",
-  "prettier.ignorePath": ".prettierignore",
+  "prettier.enable": false,
   "eslint.enable": true,
   "eslint.format.enable": false,
+  "eslint.options": {
+    "overrideConfigFile": "./packages/react/dist/index.mjs"
+  },
   "cSpell.words": ["multilines"]
 }
