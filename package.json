@@ -10,6 +10,10 @@
     "typescript",
     "react"
   ],
+  "devDependencies": {
+    "@tapie-kr/code-guideline-base": "^0.0.2",
+    "eslint": "^9.19.0"
+  },
   "author": {
     "name": "Taeyeong Kim",
     "email": "taeyeong.kim@algorix.io",

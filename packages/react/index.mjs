@@ -18,7 +18,7 @@ const config = [
     },
     settings: { react: { version: 'detect' } },
   },
-  baseConfig,
+  ...baseConfig,
   formatConfig,
 ];
 
