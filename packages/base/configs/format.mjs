@@ -175,7 +175,13 @@ const config = {
 
     '@stylistic/no-mixed-spaces-and-tabs': 'error',
 
-    '@stylistic/no-multi-spaces': 'error',
+    '@stylistic/no-multi-spaces': ['error',
+      {
+        exceptions: {
+          Property:        true,
+          ImportAttribute: true,
+        },
+      }],
 
     '@stylistic/no-multiple-empty-lines': ['error',
       {
