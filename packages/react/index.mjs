@@ -18,6 +18,12 @@ const config = [
     },
     settings: { react: { version: 'detect' } },
   },
+  {
+    ignores: [
+      '**/.next/**',
+      '**/next-env.d.ts',
+    ],
+  },
   ...baseConfig,
   formatConfig,
 ];

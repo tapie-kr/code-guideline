@@ -14,7 +14,13 @@ const config = [
       parser:      tsParser,
     },
   },
-  { ignores: ['**/node_modules/**', '**/dist/**', '**/build/**', '**/.next/**'] },
+  {
+    ignores: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/build/**',
+    ],
+  },
   formatConfig,
 ];
 
