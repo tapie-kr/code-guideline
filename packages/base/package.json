@@ -1,6 +1,6 @@
 {
   "name": "@tapie-kr/code-guideline-base",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "TAPIE Code Style Standards - Base Configuration",
   "scripts": {
     "build": "rimraf dist && tsup",
@@ -24,7 +24,9 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^3.0.1",
-    "@typescript-eslint/parser": "^8.22.0"
+    "@typescript-eslint/parser": "^8.22.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1"
   },
   "author": {
     "name": "Taeyeong Kim",

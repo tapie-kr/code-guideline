@@ -1,6 +1,6 @@
 import tsParser from '@typescript-eslint/parser';
-
 import formatConfig from './configs/format.mjs';
+import importConfig from './configs/import.mjs';
 
 /**
  * @type {Array<import('eslint').Linter.Config>}
@@ -22,6 +22,7 @@ const config = [
     ],
   },
   formatConfig,
+  importConfig,
 ];
 
 export default config;

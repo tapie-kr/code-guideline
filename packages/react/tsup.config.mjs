@@ -1,6 +1,5 @@
 import { defineConfig } from 'tsup';
-
-import { peerDependencies, dependencies } from './package.json';
+import { dependencies, peerDependencies } from './package.json';
 
 export default defineConfig({
   entry:        ['index.mjs'],

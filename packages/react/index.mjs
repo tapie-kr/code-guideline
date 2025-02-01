@@ -1,8 +1,6 @@
-import tsParser from '@typescript-eslint/parser';
-
-import formatConfig from './configs/format.mjs';
-
 import baseConfig from '@tapie-kr/code-guideline-base';
+import tsParser from '@typescript-eslint/parser';
+import formatConfig from './configs/format.mjs';
 
 /**
  * @type {Array<import('eslint').Linter.Config>}

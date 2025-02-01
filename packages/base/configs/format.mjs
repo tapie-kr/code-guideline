@@ -221,6 +221,11 @@ const config = {
         blankLine: 'always',
         prev:      '*',
         next:      '*',
+      },
+      {
+        blankLine: 'any',
+        prev:      'import',
+        next:      'import',
       }],
 
     '@stylistic/quote-props': ['error', 'as-needed'],
