@@ -81,11 +81,7 @@ const config = {
         after:  true,
       }],
 
-    '@stylistic/line-comment-position': ['error',
-      {
-        position:                   'above',
-        applyDefaultIgnorePatterns: false,
-      }],
+    '@stylistic/line-comment-position': 'error',
 
     '@stylistic/linebreak-style': ['error', 'unix'],
 
@@ -98,6 +94,8 @@ const config = {
         allowObjectEnd:             false,
         allowArrayStart:            false,
         allowArrayEnd:              false,
+        allowBlockStart:            true,
+        allowBlockEnd:              false,
         allowEnumStart:             false,
         allowEnumEnd:               false,
         allowInterfaceStart:        false,
@@ -123,7 +121,7 @@ const config = {
 
     '@stylistic/max-len': ['error',
       {
-        code:                   100,
+        code:                   Infinity,
         tabWidth:               2,
         comments:               100,
         ignoreComments:         false,
@@ -152,10 +150,7 @@ const config = {
       { ignoreChainWithDepth: 2 }],
 
     '@stylistic/no-confusing-arrow': ['error',
-      {
-        allowParens:        false,
-        onlyOneSimpleParam: true,
-      }],
+      { onlyOneSimpleParam: true }],
 
     '@stylistic/no-extra-parens': ['error',
       'all',
@@ -170,8 +165,7 @@ const config = {
 
     '@stylistic/no-floating-decimal': 'error',
 
-    '@stylistic/no-mixed-operators': ['error',
-      { allowSamePrecedence: false }],
+    '@stylistic/no-mixed-operators': 'error',
 
     '@stylistic/no-mixed-spaces-and-tabs': 'error',
 
