@@ -159,6 +159,7 @@ const config = {
         ternaryOperandBinaryExpressions: false,
         ignoreJSX:                       'multi-line',
         nestedConditionalExpressions:    false,
+        enforceForArrowConditionals:     false,
       }],
 
     '@stylistic/no-extra-semi': 'error',
