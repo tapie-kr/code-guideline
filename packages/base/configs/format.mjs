@@ -70,7 +70,7 @@ const config = {
         align: {
           beforeColon: false,
           afterColon:  true,
-          mode:        'minimum',
+          mode:        'strict',
           on:          'value',
         },
       }],
@@ -178,8 +178,9 @@ const config = {
     '@stylistic/no-multi-spaces': ['error',
       {
         exceptions: {
-          Property:        true,
-          ImportAttribute: true,
+          Property:         true,
+          ImportAttribute:  true,
+          TSTypeAnnotation: true,
         },
       }],
 

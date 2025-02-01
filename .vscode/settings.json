@@ -21,7 +21,7 @@
   "eslint.enable": true,
   "eslint.format.enable": false,
   "eslint.options": {
-    "overrideConfigFile": "./eslint.config.mjs"
+    "overrideConfigFile": "./packages/base/dist/index.mjs"
   },
   "cSpell.words": ["multilines"]
 }
