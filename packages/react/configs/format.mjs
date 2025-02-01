@@ -36,10 +36,7 @@ const config = {
     '@stylistic/jsx-indent-props': ['error', 2],
 
     '@stylistic/jsx-max-props-per-line': ['error',
-      {
-        maximum: 2,
-        when:    'multiline',
-      }],
+      { maximum: 2 }],
 
     '@stylistic/jsx-newline': ['error',
       {

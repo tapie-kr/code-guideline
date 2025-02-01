@@ -1,6 +1,6 @@
 {
   "name": "@tapie-kr/code-guideline-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TAPIE Code Style Standards - React Configuration",
   "scripts": {
     "build": "rimraf dist && tsup",
