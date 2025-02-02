@@ -1,9 +1,6 @@
 import tsParser from '@typescript-eslint/parser';
-
 import formatConfig from './configs/format.mjs';
-
 import importConfig from './configs/import.mjs';
-
 import restrictConfig from './configs/restrict.mjs';
 
 /**

@@ -5,7 +5,7 @@ import stylistic from '@stylistic/eslint-plugin';
  */
 const config = {
   plugins: { '@stylistic': stylistic },
-  files:   ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+  files:   ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
   rules:   {
     '@stylistic/array-bracket-newline': ['error', 'consistent'],
 
