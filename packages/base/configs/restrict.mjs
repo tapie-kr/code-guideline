@@ -5,15 +5,11 @@ import typescript from '@typescript-eslint/eslint-plugin';
  */
 const defaultConfig = {
   rules: {
-    'no-console':              ['warn', { allow: ['warn', 'error'] }],
-    'no-debugger':             'error',
-    'no-alert':                'error',
-    'no-var':                  'error',
-    'no-unused-vars':          'off',
-    'no-multiple-empty-lines': ['error', { max: 1 }],
-    'no-duplicate-imports':    'error',
-    'no-undef':                'off',
-    'no-redeclare':            'off',
+    'no-console':           ['warn', { allow: ['warn', 'error'] }],
+    'no-debugger':          'error',
+    'no-alert':             'error',
+    'no-var':               'error',
+    'no-duplicate-imports': 'error',
   },
 };
 
@@ -24,8 +20,14 @@ const typescriptConfig = {
   plugins: { '@typescript-eslint': typescript },
   files:   ['**/*.{ts,mts,cts,tsx}'],
   rules:   {
-    '@typescript-eslint/no-explicit-any':         'error',
-    '@typescript-eslint/no-unused-vars':          ['error', { varsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-explicit-any': 'error',
+    '@typescript-eslint/no-unused-vars':  ['error',
+      {
+        varsIgnorePattern:              '^_',
+        caughtErrorsIgnorePattern:      '^_',
+        destructuredArrayIgnorePattern: '^_',
+        argsIgnorePattern:              '^_',
+      }],
     '@typescript-eslint/consistent-type-imports': [
       'error',
       {
@@ -44,8 +46,15 @@ const javascriptConfig = {
   plugins: { '@typescript-eslint': typescript },
   files:   ['**/*.{js,mjs,cjs,jsx}'],
   rules:   {
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-    'no-undef':       'off',
+    'no-unused-vars': ['error',
+      {
+        varsIgnorePattern:              '^_',
+        caughtErrorsIgnorePattern:      '^_',
+        destructuredArrayIgnorePattern: '^_',
+        argsIgnorePattern:              '^_',
+      }],
+    'no-undef':     'error',
+    'no-redeclare': 'error',
   },
 };
 

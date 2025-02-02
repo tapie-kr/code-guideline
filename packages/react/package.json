@@ -1,6 +1,6 @@
 {
   "name": "@tapie-kr/code-guideline-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "TAPIE Code Style Standards - React Configuration",
   "scripts": {
     "build": "rimraf dist && tsup",
@@ -17,7 +17,7 @@
     "react"
   ],
   "peerDependencies": {
-    "@tapie-kr/code-guideline-base": "^0.0.2",
+    "@tapie-kr/code-guideline-base": "^0.1.7",
     "eslint": "^9.19.0"
   },
   "devDependencies": {
