@@ -1,17 +1,21 @@
 import tsParser from '@typescript-eslint/parser';
+
 import formatConfig from './configs/format.mjs';
+
 import importConfig from './configs/import.mjs';
+
+import restrictConfig from './configs/restrict.mjs';
 
 /**
  * @type {Array<import('eslint').Linter.Config>}
  */
 const config = [
   {
-    files:           ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType:  'module',
-      parser:      tsParser,
+      ecmaVersion:   'latest',
+      sourceType:    'module',
+      parser:        tsParser,
+      parserOptions: { ecmaFeatures: { jsx: true } },
     },
   },
   {
@@ -23,6 +27,7 @@ const config = [
   },
   formatConfig,
   importConfig,
+  ...restrictConfig,
 ];
 
 export default config;

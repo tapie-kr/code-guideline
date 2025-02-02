@@ -1,4 +1,5 @@
 import importPlugin from 'eslint-plugin-import';
+
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 
 /**
