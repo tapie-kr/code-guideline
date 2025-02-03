@@ -1,7 +1,5 @@
 import baseConfig from '@tapie-kr/code-guideline-base';
-
 import tsParser from '@typescript-eslint/parser';
-
 import formatConfig from './configs/format.mjs';
 
 /**

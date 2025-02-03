@@ -53,7 +53,6 @@ const javascriptConfig = {
         destructuredArrayIgnorePattern: '^_',
         argsIgnorePattern:              '^_',
       }],
-    'no-undef':     'error',
     'no-redeclare': 'error',
   },
 };
