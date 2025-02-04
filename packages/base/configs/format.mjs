@@ -337,7 +337,7 @@ const config = {
 
     '@stylistic/yield-star-spacing': ['error', 'after'],
 
-    'newline-destructuring/newline': 'error',
+    'newline-destructuring/newline': ['error', { itemsWithRest: 2 }],
   },
 };
 
