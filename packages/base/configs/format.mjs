@@ -122,7 +122,7 @@ const config = {
 
     '@stylistic/max-len': ['error',
       {
-        code:                   Infinity,
+        code:                   150,
         tabWidth:               2,
         comments:               100,
         ignoreComments:         false,

@@ -38,10 +38,7 @@ const config = {
     '@stylistic/jsx-max-props-per-line': 'error',
 
     '@stylistic/jsx-newline': ['error',
-      {
-        prevent:         true,
-        allowMultilines: true,
-      }],
+      { prevent: true }],
 
     '@stylistic/jsx-one-expression-per-line': ['error',
       { allow: 'non-jsx' }],
