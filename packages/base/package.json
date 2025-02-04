@@ -27,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^8.22.0",
     "@typescript-eslint/parser": "^8.22.0",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-import-newlines": "^1.4.0",
     "eslint-plugin-simple-import-sort": "^12.1.1"
   },
   "author": {

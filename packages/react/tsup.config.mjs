@@ -1,9 +1,5 @@
-import {
-  defineConfig,
-} from 'tsup';
-import {
-  dependencies, peerDependencies,
-} from './package.json';
+import { defineConfig } from 'tsup';
+import { dependencies, peerDependencies } from './package.json';
 
 export default defineConfig({
   entry:        ['index.mjs'],
@@ -21,5 +17,8 @@ export default defineConfig({
       js: '.cjs',
     },
   dts:      true,
-  external: [...Object.keys(peerDependencies || {}), ...Object.keys(dependencies || {})],
+  external: [...Object.keys(peerDependencies || {
+  }),
+  ...Object.keys(dependencies || {
+  })],
 });

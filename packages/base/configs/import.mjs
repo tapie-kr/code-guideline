@@ -1,3 +1,4 @@
+import importNewLines from 'eslint-plugin-import-newlines';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 
 /**
@@ -6,11 +7,13 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
 const config = {
   plugins: {
     'simple-import-sort': simpleImportSort,
+    'import-newlines':    importNewLines,
   },
   settings: {
     'import/resolver': {
-      typescript: {},
-      node:       {
+      typescript: {
+      },
+      node: {
         extensions: [
           '.js', '.mjs', '.cjs', '.jsx', '.ts', '.mts', '.cts', '.tsx',
         ],
@@ -29,6 +32,10 @@ const config = {
         ],
       },
     ],
+    'import-newlines/enforce': ['error',
+      {
+        'max-len': 120,
+      }],
   },
 };
 

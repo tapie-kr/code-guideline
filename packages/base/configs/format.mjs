@@ -205,8 +205,14 @@ const config = {
 
     '@stylistic/object-curly-newline': ['error',
       {
-        multiline:     true,
-        minProperties: 1,
+        ObjectExpression:  'always',
+        ObjectPattern:     'always',
+        ImportDeclaration: {
+          minProperties: 4,
+        },
+        ExportDeclaration: 'always',
+        TSTypeLiteral:     'always',
+        TSInterfaceBody:   'always',
       }],
 
     '@stylistic/object-curly-spacing': ['error',
