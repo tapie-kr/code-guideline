@@ -13,8 +13,5 @@ export default defineConfig({
     ? { js: '.mjs' }
     : { js: '.cjs' },
   dts:      true,
-  external: [
-    ...Object.keys(peerDependencies || {}),
-    ...Object.keys(dependencies || {}),
-  ],
+  external: [...Object.keys(peerDependencies || {}), ...Object.keys(dependencies || {})],
 });

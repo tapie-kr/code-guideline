@@ -4,10 +4,7 @@ import typescript from '@typescript-eslint/eslint-plugin';
  * @type {import('eslint').Linter.Config}
  */
 const defaultConfig = { rules: {
-  'no-console': [
-    'warn',
-    { allow: ['warn', 'error'] },
-  ],
+  'no-console':           ['warn', { allow: ['warn', 'error'] }],
   'no-debugger':          'error',
   'no-alert':             'error',
   'no-var':               'error',
@@ -63,5 +60,7 @@ const javascriptConfig = {
 };
 
 export default [
-  defaultConfig, typescriptConfig, javascriptConfig,
+  defaultConfig,
+  typescriptConfig,
+  javascriptConfig,
 ];

@@ -12,7 +12,14 @@ const config = {
   settings: { 'import/resolver': {
     typescript: {},
     node:       { extensions: [
-      '.js', '.mjs', '.cjs', '.jsx', '.ts', '.mts', '.cts', '.tsx',
+      '.js',
+      '.mjs',
+      '.cjs',
+      '.jsx',
+      '.ts',
+      '.mts',
+      '.cts',
+      '.tsx',
     ] },
   } },
   rules: {
@@ -20,14 +27,20 @@ const config = {
       'error',
       { groups: [
         ['^.+\\.css$'],
-        ['^@cottons-kr/react-foundation', '^@/components/(?!.*?/shared$)'],
         [
-          '^@?\\w', '^@/', '^\\.',
+          '^@cottons-kr/react-foundation',
+          '@tapie-kr/inspire-react',
+          '^@/components/(?!.*?/shared$)',
+        ],
+        [
+          '^@?\\w',
+          '^@/',
+          '^\\.',
         ],
         ['^\\u0000'],
       ] },
     ],
-    'import-newlines/enforce': 'error',
+    'import-newlines/enforce': ['error', { items: 3 }],
   },
 };
 

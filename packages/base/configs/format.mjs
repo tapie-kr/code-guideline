@@ -20,8 +20,8 @@ const config = {
     '@stylistic/array-element-newline': [
       'error',
       {
-        consistent: true,
-        multiline:  true,
+        minItems:  3,
+        multiline: true,
       },
     ],
 
@@ -63,10 +63,7 @@ const config = {
 
     '@stylistic/function-call-spacing': ['error', 'never'],
 
-    '@stylistic/function-paren-newline': [
-      'error',
-      { minItems: 5 },
-    ],
+    '@stylistic/function-paren-newline': ['error', { minItems: 5 }],
 
     '@stylistic/generator-star-spacing': [
       'error',
@@ -160,7 +157,9 @@ const config = {
       {
         max:          1,
         ignoredNodes: [
-          'BreakStatement', 'ContinueStatement', 'ReturnStatement',
+          'BreakStatement',
+          'ContinueStatement',
+          'ReturnStatement',
         ],
       },
     ],
@@ -173,15 +172,9 @@ const config = {
 
     '@stylistic/new-parens': ['error', 'never'],
 
-    '@stylistic/newline-per-chained-call': [
-      'error',
-      { ignoreChainWithDepth: 2 },
-    ],
+    '@stylistic/newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
 
-    '@stylistic/no-confusing-arrow': [
-      'error',
-      { onlyOneSimpleParam: true },
-    ],
+    '@stylistic/no-confusing-arrow': ['error', { onlyOneSimpleParam: true }],
 
     '@stylistic/no-extra-parens': [
       'error',
@@ -247,7 +240,13 @@ const config = {
       { arraysInObjects: true },
     ],
 
-    '@stylistic/object-property-newline': 'error',
+    '@stylistic/object-property-newline': [
+      'error',
+      {
+        allowAllPropertiesOnSameLine:   true,
+        allowMultiplePropertiesPerLine: true,
+      },
+    ],
 
     '@stylistic/one-var-declaration-per-line': ['error', 'always'],
 
