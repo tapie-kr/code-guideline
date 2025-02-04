@@ -12,9 +12,17 @@ const config = [
       ecmaVersion:   'latest',
       sourceType:    'module',
       parser:        tsParser,
-      parserOptions: { ecmaFeatures: { jsx: true } },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
-    settings: { react: { version: 'detect' } },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
   },
   {
     ignores: [

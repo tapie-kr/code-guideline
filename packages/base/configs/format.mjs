@@ -4,9 +4,11 @@ import stylistic from '@stylistic/eslint-plugin';
  * @type {import('eslint').Linter.Config}
  */
 const config = {
-  plugins: { '@stylistic': stylistic },
-  files:   ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
-  rules:   {
+  plugins: {
+    '@stylistic': stylistic,
+  },
+  files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
+  rules: {
     '@stylistic/array-bracket-newline': ['error', 'consistent'],
 
     '@stylistic/array-bracket-spacing': ['error', 'never'],
@@ -52,7 +54,9 @@ const config = {
     '@stylistic/function-call-spacing': ['error', 'never'],
 
     '@stylistic/function-paren-newline': ['error',
-      { minItems: 5 }],
+      {
+        minItems: 5,
+      }],
 
     '@stylistic/generator-star-spacing': ['error',
       {
@@ -125,8 +129,8 @@ const config = {
         code:                   150,
         tabWidth:               2,
         comments:               100,
-        ignoreComments:         false,
-        ignoreTrailingComments: false,
+        ignoreComments:         true,
+        ignoreTrailingComments: true,
         ignoreUrls:             true,
         ignoreStrings:          true,
         ignoreTemplateLiterals: true,
@@ -148,10 +152,14 @@ const config = {
     '@stylistic/new-parens': ['error', 'never'],
 
     '@stylistic/newline-per-chained-call': ['error',
-      { ignoreChainWithDepth: 2 }],
+      {
+        ignoreChainWithDepth: 2,
+      }],
 
     '@stylistic/no-confusing-arrow': ['error',
-      { onlyOneSimpleParam: true }],
+      {
+        onlyOneSimpleParam: true,
+      }],
 
     '@stylistic/no-extra-parens': ['error',
       'all',
@@ -196,11 +204,16 @@ const config = {
     '@stylistic/nonblock-statement-body-position': ['error', 'beside'],
 
     '@stylistic/object-curly-newline': ['error',
-      { multiline: true }],
+      {
+        multiline:     true,
+        minProperties: 1,
+      }],
 
     '@stylistic/object-curly-spacing': ['error',
       'always',
-      { arraysInObjects: true }],
+      {
+        arraysInObjects: true,
+      }],
 
     '@stylistic/object-property-newline': 'error',
 
@@ -233,7 +246,9 @@ const config = {
 
     '@stylistic/quotes': ['error',
       'single',
-      { avoidEscape: true }],
+      {
+        avoidEscape: true,
+      }],
 
     '@stylistic/rest-spread-spacing': 'error',
 

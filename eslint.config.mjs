@@ -1,3 +1,3 @@
-import config from '@tapie-kr/code-guideline-base'
+import config from '@tapie-kr/code-guideline-base';
 
-export default config
+export default config;

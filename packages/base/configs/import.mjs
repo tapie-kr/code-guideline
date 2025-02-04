@@ -1,4 +1,3 @@
-import importPlugin from 'eslint-plugin-import';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 
 /**
@@ -6,7 +5,6 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
  */
 const config = {
   plugins: {
-    import:               importPlugin,
     'simple-import-sort': simpleImportSort,
   },
   settings: {

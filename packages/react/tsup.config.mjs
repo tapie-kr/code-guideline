@@ -1,6 +1,9 @@
-import { defineConfig } from 'tsup';
-
-import { dependencies, peerDependencies } from './package.json';
+import {
+  defineConfig,
+} from 'tsup';
+import {
+  dependencies, peerDependencies,
+} from './package.json';
 
 export default defineConfig({
   entry:        ['index.mjs'],
@@ -8,7 +11,15 @@ export default defineConfig({
   format:       ['esm', 'cjs'],
   target:       'node20',
   minify:       false,
-  outExtension: ({ format }) => format === 'esm' ? { js: '.mjs' } : { js: '.cjs' },
-  dts:          true,
-  external:     [...Object.keys(peerDependencies || {}), ...Object.keys(dependencies || {})],
+  outExtension: ({
+    format,
+  }) => format === 'esm'
+    ? {
+      js: '.mjs',
+    }
+    : {
+      js: '.cjs',
+    },
+  dts:      true,
+  external: [...Object.keys(peerDependencies || {}), ...Object.keys(dependencies || {})],
 });

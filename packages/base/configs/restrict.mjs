@@ -5,7 +5,10 @@ import typescript from '@typescript-eslint/eslint-plugin';
  */
 const defaultConfig = {
   rules: {
-    'no-console':           ['warn', { allow: ['warn', 'error'] }],
+    'no-console': ['warn',
+      {
+        allow: ['warn', 'error'],
+      }],
     'no-debugger':          'error',
     'no-alert':             'error',
     'no-var':               'error',
@@ -17,9 +20,11 @@ const defaultConfig = {
  * @type {import('eslint').Linter.Config}
  */
 const typescriptConfig = {
-  plugins: { '@typescript-eslint': typescript },
-  files:   ['**/*.{ts,mts,cts,tsx}'],
-  rules:   {
+  plugins: {
+    '@typescript-eslint': typescript,
+  },
+  files: ['**/*.{ts,mts,cts,tsx}'],
+  rules: {
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-unused-vars':  ['error',
       {
@@ -43,9 +48,11 @@ const typescriptConfig = {
  * @type {import('eslint').Linter.Config}
  */
 const javascriptConfig = {
-  plugins: { '@typescript-eslint': typescript },
-  files:   ['**/*.{js,mjs,cjs,jsx}'],
-  rules:   {
+  plugins: {
+    '@typescript-eslint': typescript,
+  },
+  files: ['**/*.{js,mjs,cjs,jsx}'],
+  rules: {
     'no-unused-vars': ['error',
       {
         varsIgnorePattern:              '^_',
