@@ -7,25 +7,17 @@ import restrictConfig from './configs/restrict.mjs';
  * @type {Array<import('eslint').Linter.Config>}
  */
 const config = [
-  {
-    languageOptions: {
-      ecmaVersion:   'latest',
-      sourceType:    'module',
-      parser:        tsParser,
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-  },
-  {
-    ignores: [
-      '**/node_modules/**',
-      '**/dist/**',
-      '**/build/**',
-    ],
-  },
+  { languageOptions: {
+    ecmaVersion:   'latest',
+    sourceType:    'module',
+    parser:        tsParser,
+    parserOptions: { ecmaFeatures: { jsx: true } },
+  } },
+  { ignores: [
+    '**/node_modules/**',
+    '**/dist/**',
+    '**/build/**',
+  ] },
   formatConfig,
   importConfig,
   ...restrictConfig,

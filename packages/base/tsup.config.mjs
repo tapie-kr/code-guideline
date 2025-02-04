@@ -10,15 +10,9 @@ export default defineConfig({
   outExtension: ({
     format,
   }) => format === 'esm'
-    ? {
-      js: '.mjs',
-    }
-    : {
-      js: '.cjs',
-    },
+    ? { js: '.mjs' }
+    : { js: '.cjs' },
   dts:      true,
-  external: [...Object.keys(peerDependencies || {
-  }),
-  ...Object.keys(dependencies || {
-  })],
+  external: [...Object.keys(peerDependencies || {}),
+    ...Object.keys(dependencies || {})],
 });

@@ -4,10 +4,8 @@ import stylistic from '@stylistic/eslint-plugin';
  * @type {import("eslint").Linter.Config}
  */
 const config = {
-  plugins: {
-    '@stylistic': stylistic,
-  },
-  rules: {
+  plugins: { '@stylistic': stylistic },
+  rules:   {
     '@stylistic/jsx-child-element-spacing': 'off',
 
     '@stylistic/jsx-closing-bracket-location': ['error', 'line-aligned'],
@@ -25,9 +23,7 @@ const config = {
 
     '@stylistic/jsx-curly-spacing': ['error',
       'never',
-      {
-        allowMultiline: false,
-      }],
+      { allowMultiline: false }],
 
     '@stylistic/jsx-equals-spacing': ['error', 'never'],
 
@@ -42,14 +38,10 @@ const config = {
     '@stylistic/jsx-max-props-per-line': 'error',
 
     '@stylistic/jsx-newline': ['error',
-      {
-        prevent: true,
-      }],
+      { prevent: true }],
 
     '@stylistic/jsx-one-expression-per-line': ['error',
-      {
-        allow: 'non-jsx',
-      }],
+      { allow: 'non-jsx' }],
 
     '@stylistic/jsx-pascal-case': ['error',
       {

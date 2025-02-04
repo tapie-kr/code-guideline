@@ -4,11 +4,9 @@ import stylistic from '@stylistic/eslint-plugin';
  * @type {import('eslint').Linter.Config}
  */
 const config = {
-  plugins: {
-    '@stylistic': stylistic,
-  },
-  files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
-  rules: {
+  plugins: { '@stylistic': stylistic },
+  files:   ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
+  rules:   {
     '@stylistic/array-bracket-newline': ['error', 'consistent'],
 
     '@stylistic/array-bracket-spacing': ['error', 'never'],
@@ -54,9 +52,7 @@ const config = {
     '@stylistic/function-call-spacing': ['error', 'never'],
 
     '@stylistic/function-paren-newline': ['error',
-      {
-        minItems: 5,
-      }],
+      { minItems: 5 }],
 
     '@stylistic/generator-star-spacing': ['error',
       {
@@ -71,14 +67,12 @@ const config = {
     '@stylistic/indent-binary-ops': ['error', 2],
 
     '@stylistic/key-spacing': ['error',
-      {
-        align: {
-          beforeColon: false,
-          afterColon:  true,
-          mode:        'strict',
-          on:          'value',
-        },
-      }],
+      { align: {
+        beforeColon: false,
+        afterColon:  true,
+        mode:        'strict',
+        on:          'value',
+      } }],
 
     '@stylistic/keyword-spacing': ['error',
       {
@@ -114,15 +108,13 @@ const config = {
       }],
 
     '@stylistic/lines-between-class-members': ['error',
-      {
-        enforce: [
-          {
-            blankLine: 'never',
-            prev:      'method',
-            next:      'method',
-          },
-        ],
-      }],
+      { enforce: [
+        {
+          blankLine: 'never',
+          prev:      'method',
+          next:      'method',
+        },
+      ] }],
 
     '@stylistic/max-len': ['error',
       {
@@ -152,14 +144,10 @@ const config = {
     '@stylistic/new-parens': ['error', 'never'],
 
     '@stylistic/newline-per-chained-call': ['error',
-      {
-        ignoreChainWithDepth: 2,
-      }],
+      { ignoreChainWithDepth: 2 }],
 
     '@stylistic/no-confusing-arrow': ['error',
-      {
-        onlyOneSimpleParam: true,
-      }],
+      { onlyOneSimpleParam: true }],
 
     '@stylistic/no-extra-parens': ['error',
       'all',
@@ -180,13 +168,11 @@ const config = {
     '@stylistic/no-mixed-spaces-and-tabs': 'error',
 
     '@stylistic/no-multi-spaces': ['error',
-      {
-        exceptions: {
-          Property:         true,
-          ImportAttribute:  true,
-          TSTypeAnnotation: true,
-        },
-      }],
+      { exceptions: {
+        Property:         true,
+        ImportAttribute:  true,
+        TSTypeAnnotation: true,
+      } }],
 
     '@stylistic/no-multiple-empty-lines': ['error',
       {
@@ -205,11 +191,9 @@ const config = {
 
     '@stylistic/object-curly-newline': ['error',
       {
-        ObjectExpression:  'always',
+        ObjectExpression:  { minProperties: 2 },
         ObjectPattern:     'always',
-        ImportDeclaration: {
-          minProperties: 4,
-        },
+        ImportDeclaration: { minProperties: 4 },
         ExportDeclaration: 'always',
         TSTypeLiteral:     'always',
         TSInterfaceBody:   'always',
@@ -217,9 +201,7 @@ const config = {
 
     '@stylistic/object-curly-spacing': ['error',
       'always',
-      {
-        arraysInObjects: true,
-      }],
+      { arraysInObjects: true }],
 
     '@stylistic/object-property-newline': 'error',
 
@@ -227,12 +209,10 @@ const config = {
 
     '@stylistic/operator-linebreak': ['error',
       'after',
-      {
-        overrides: {
-          '?': 'before',
-          ':': 'before',
-        },
-      }],
+      { overrides: {
+        '?': 'before',
+        ':': 'before',
+      } }],
 
     '@stylistic/padded-blocks': ['error', 'never'],
 
@@ -252,9 +232,7 @@ const config = {
 
     '@stylistic/quotes': ['error',
       'single',
-      {
-        avoidEscape: true,
-      }],
+      { avoidEscape: true }],
 
     '@stylistic/rest-spread-spacing': 'error',
 

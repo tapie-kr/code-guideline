@@ -9,33 +9,24 @@ const config = {
     'simple-import-sort': simpleImportSort,
     'import-newlines':    importNewLines,
   },
-  settings: {
-    'import/resolver': {
-      typescript: {
-      },
-      node: {
-        extensions: [
-          '.js', '.mjs', '.cjs', '.jsx', '.ts', '.mts', '.cts', '.tsx',
-        ],
-      },
-    },
-  },
+  settings: { 'import/resolver': {
+    typescript: {},
+    node:       { extensions: [
+      '.js', '.mjs', '.cjs', '.jsx', '.ts', '.mts', '.cts', '.tsx',
+    ] },
+  } },
   rules: {
     'simple-import-sort/imports': [
       'error',
-      {
-        groups: [
-          ['^.+\\.css$'],
-          ['^@cottons-kr/react-foundation', '^@/components/(?!.*?/shared$)'],
-          ['^@?\\w', '^@/', '^\\.'],
-          ['^\\u0000'],
-        ],
-      },
+      { groups: [
+        ['^.+\\.css$'],
+        ['^@cottons-kr/react-foundation', '^@/components/(?!.*?/shared$)'],
+        ['^@?\\w', '^@/', '^\\.'],
+        ['^\\u0000'],
+      ] },
     ],
     'import-newlines/enforce': ['error',
-      {
-        'max-len': 120,
-      }],
+      { 'max-len': 120 }],
   },
 };
 
