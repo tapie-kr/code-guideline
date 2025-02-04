@@ -1,12 +1,15 @@
 import stylistic from '@stylistic/eslint-plugin';
+import newlineDestructuring from 'eslint-plugin-newline-destructuring';
 
 /**
  * @type {import('eslint').Linter.Config}
  */
 const config = {
-  plugins: { '@stylistic': stylistic },
-  files:   ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
-  rules:   {
+  plugins: {
+    '@stylistic': stylistic, 'newline-destructuring': newlineDestructuring,
+  },
+  files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
+  rules: {
     '@stylistic/array-bracket-newline': [
       'error',
       {
@@ -226,7 +229,7 @@ const config = {
       'error',
       {
         ObjectExpression:  { minProperties: 2 },
-        ObjectPattern:     'always',
+        ObjectPattern:     { minProperties: 3 },
         ImportDeclaration: { minProperties: 4 },
         ExportDeclaration: 'always',
         TSTypeLiteral:     'always',
@@ -333,6 +336,8 @@ const config = {
     '@stylistic/wrap-regex': 'error',
 
     '@stylistic/yield-star-spacing': ['error', 'after'],
+
+    'newline-destructuring/newline': 'error',
   },
 };
 

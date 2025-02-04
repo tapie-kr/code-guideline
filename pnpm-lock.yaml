@@ -35,6 +35,9 @@ importers:
       eslint-plugin-import-newlines:
         specifier: ^1.4.0
         version: 1.4.0(eslint@9.19.0)
+      eslint-plugin-newline-destructuring:
+        specifier: ^1.2.2
+        version: 1.2.2(eslint@9.19.0)
       eslint-plugin-simple-import-sort:
         specifier: ^12.1.1
         version: 12.1.1(eslint@9.19.0)
@@ -751,6 +754,11 @@ packages:
     peerDependenciesMeta:
       '@typescript-eslint/parser':
         optional: true
+
+  eslint-plugin-newline-destructuring@1.2.2:
+    resolution: {integrity: sha512-QfKQpdx+ez2E233B6xSG82+SdkKhxSchTJCjUHjJ2RmMCq+v2IBTaR8wK2pejTBV05p/J1qB8QOOKXQNqWJGSA==}
+    peerDependencies:
+      eslint: '>=7.2.0'
 
   eslint-plugin-simple-import-sort@12.1.1:
     resolution: {integrity: sha512-6nuzu4xwQtE3332Uz0to+TxDQYRLTKRESSc2hefVT48Zc8JthmN23Gx9lnYhu0FtkRSL1oxny3kJ2aveVhmOVA==}
@@ -2283,6 +2291,10 @@ snapshots:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
+
+  eslint-plugin-newline-destructuring@1.2.2(eslint@9.19.0):
+    dependencies:
+      eslint: 9.19.0
 
   eslint-plugin-simple-import-sort@12.1.1(eslint@9.19.0):
     dependencies:
