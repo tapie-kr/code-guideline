@@ -12,18 +12,22 @@ const config = {
 
     '@stylistic/jsx-closing-tag-location': ['error', 'line-aligned'],
 
-    '@stylistic/jsx-curly-brace-presence': ['error',
+    '@stylistic/jsx-curly-brace-presence': [
+      'error',
       {
         props:             'never',
         children:          'never',
         propElementValues: 'always',
-      }],
+      },
+    ],
 
     '@stylistic/jsx-curly-newline': ['error', 'consistent'],
 
-    '@stylistic/jsx-curly-spacing': ['error',
+    '@stylistic/jsx-curly-spacing': [
+      'error',
       'never',
-      { allowMultiline: false }],
+      { allowMultiline: false },
+    ],
 
     '@stylistic/jsx-equals-spacing': ['error', 'never'],
 
@@ -37,17 +41,23 @@ const config = {
 
     '@stylistic/jsx-max-props-per-line': 'error',
 
-    '@stylistic/jsx-newline': ['error',
-      { prevent: true }],
+    '@stylistic/jsx-newline': [
+      'error',
+      { prevent: true },
+    ],
 
-    '@stylistic/jsx-one-expression-per-line': ['error',
-      { allow: 'non-jsx' }],
+    '@stylistic/jsx-one-expression-per-line': [
+      'error',
+      { allow: 'non-jsx' },
+    ],
 
-    '@stylistic/jsx-pascal-case': ['error',
+    '@stylistic/jsx-pascal-case': [
+      'error',
       {
         allowAllCaps:   true,
         allowNamespace: true,
-      }],
+      },
+    ],
 
     '@stylistic/jsx-props-no-multi-spaces': 'error',
 
@@ -55,7 +65,8 @@ const config = {
 
     '@stylistic/jsx-self-closing-comp': 'error',
 
-    '@stylistic/jsx-sort-props': ['error',
+    '@stylistic/jsx-sort-props': [
+      'error',
       {
         ignoreCase:           true,
         callbacksLast:        true,
@@ -63,15 +74,19 @@ const config = {
         multiline:            'last',
         noSortAlphabetically: true,
         reservedFirst:        true,
-      }],
+      },
+    ],
 
-    '@stylistic/jsx-tag-spacing': ['error',
+    '@stylistic/jsx-tag-spacing': [
+      'error',
       {
         closingSlash:  'allow',
         beforeClosing: 'never',
-      }],
+      },
+    ],
 
-    '@stylistic/jsx-wrap-multilines': ['error',
+    '@stylistic/jsx-wrap-multilines': [
+      'error',
       {
         declaration:   'parens-new-line',
         assignment:    'parens-new-line',
@@ -81,7 +96,8 @@ const config = {
         logical:       'parens-new-line',
         prop:          'parens-new-line',
         propertyValue: 'parens',
-      }],
+      },
+    ],
   },
 };
 

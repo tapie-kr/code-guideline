@@ -4,8 +4,10 @@ import typescript from '@typescript-eslint/eslint-plugin';
  * @type {import('eslint').Linter.Config}
  */
 const defaultConfig = { rules: {
-  'no-console': ['warn',
-    { allow: ['warn', 'error'] }],
+  'no-console': [
+    'warn',
+    { allow: ['warn', 'error'] },
+  ],
   'no-debugger':          'error',
   'no-alert':             'error',
   'no-var':               'error',
@@ -20,13 +22,15 @@ const typescriptConfig = {
   files:   ['**/*.{ts,mts,cts,tsx}'],
   rules:   {
     '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/no-unused-vars':  ['error',
+    '@typescript-eslint/no-unused-vars':  [
+      'error',
       {
         varsIgnorePattern:              '^_',
         caughtErrorsIgnorePattern:      '^_',
         destructuredArrayIgnorePattern: '^_',
         argsIgnorePattern:              '^_',
-      }],
+      },
+    ],
     '@typescript-eslint/consistent-type-imports': [
       'error',
       {
@@ -45,15 +49,19 @@ const javascriptConfig = {
   plugins: { '@typescript-eslint': typescript },
   files:   ['**/*.{js,mjs,cjs,jsx}'],
   rules:   {
-    'no-unused-vars': ['error',
+    'no-unused-vars': [
+      'error',
       {
         varsIgnorePattern:              '^_',
         caughtErrorsIgnorePattern:      '^_',
         destructuredArrayIgnorePattern: '^_',
         argsIgnorePattern:              '^_',
-      }],
+      },
+    ],
     'no-redeclare': 'error',
   },
 };
 
-export default [defaultConfig, typescriptConfig, javascriptConfig];
+export default [
+  defaultConfig, typescriptConfig, javascriptConfig,
+];

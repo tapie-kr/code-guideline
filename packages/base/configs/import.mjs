@@ -21,12 +21,13 @@ const config = {
       { groups: [
         ['^.+\\.css$'],
         ['^@cottons-kr/react-foundation', '^@/components/(?!.*?/shared$)'],
-        ['^@?\\w', '^@/', '^\\.'],
+        [
+          '^@?\\w', '^@/', '^\\.',
+        ],
         ['^\\u0000'],
       ] },
     ],
-    'import-newlines/enforce': ['error',
-      { 'max-len': 120 }],
+    'import-newlines/enforce': 'error',
   },
 };
 
