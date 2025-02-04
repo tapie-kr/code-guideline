@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@tapie-kr/code-guideline-base':
-        specifier: ^0.0.2
-        version: 0.0.2(eslint@9.19.0)(typescript@5.7.3)
+        specifier: ^0.1.11
+        version: 0.1.11(eslint@9.19.0)(typescript@5.7.3)
       eslint:
         specifier: ^9.19.0
         version: 9.19.0
@@ -413,13 +413,13 @@ packages:
     peerDependencies:
       eslint: '>=8.40.0'
 
-  '@tapie-kr/code-guideline-base@0.0.2':
-    resolution: {integrity: sha512-CjsXGr2bxgooOrVA21cuUz0xDEIbe/fbWVRYNvaVz5bvcT9VpQqu5+4SXOeucQFuHLdSoqp8GKVUdbFhmfknug==}
+  '@tapie-kr/code-guideline-base@0.1.10':
+    resolution: {integrity: sha512-9KQcrJ4x/0MiM1Ahcrc1HDIpLSVRbQ0fiHk/ZaT0S58a3BGucAu0Qca3A20i+GKbZp9Q5pfoQw3gmBN0xC5Wwg==}
     peerDependencies:
       eslint: ^9.19.0
 
-  '@tapie-kr/code-guideline-base@0.1.10':
-    resolution: {integrity: sha512-9KQcrJ4x/0MiM1Ahcrc1HDIpLSVRbQ0fiHk/ZaT0S58a3BGucAu0Qca3A20i+GKbZp9Q5pfoQw3gmBN0xC5Wwg==}
+  '@tapie-kr/code-guideline-base@0.1.11':
+    resolution: {integrity: sha512-+hMqrk+GZYLf8veEqzCxdcnR/BMJBV4FdEG2knpRQPXKMgFFj5MFWSj7Jfkj6+DBd4DtfrBYKmed3RWnKp8QXQ==}
     peerDependencies:
       eslint: ^9.19.0
 
@@ -1799,16 +1799,21 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tapie-kr/code-guideline-base@0.0.2(eslint@9.19.0)(typescript@5.7.3)':
+  '@tapie-kr/code-guideline-base@0.1.10(eslint@9.19.0)(typescript@5.7.3)':
     dependencies:
       '@stylistic/eslint-plugin': 3.0.1(eslint@9.19.0)(typescript@5.7.3)
+      '@typescript-eslint/eslint-plugin': 8.22.0(@typescript-eslint/parser@8.22.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)
       '@typescript-eslint/parser': 8.22.0(eslint@9.19.0)(typescript@5.7.3)
       eslint: 9.19.0
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.22.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)
+      eslint-plugin-simple-import-sort: 12.1.1(eslint@9.19.0)
     transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
       - typescript
 
-  '@tapie-kr/code-guideline-base@0.1.10(eslint@9.19.0)(typescript@5.7.3)':
+  '@tapie-kr/code-guideline-base@0.1.11(eslint@9.19.0)(typescript@5.7.3)':
     dependencies:
       '@stylistic/eslint-plugin': 3.0.1(eslint@9.19.0)(typescript@5.7.3)
       '@typescript-eslint/eslint-plugin': 8.22.0(@typescript-eslint/parser@8.22.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)
