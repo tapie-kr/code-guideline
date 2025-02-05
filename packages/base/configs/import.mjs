@@ -1,5 +1,6 @@
 import importNewLines from 'eslint-plugin-import-newlines';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import unusedImports from 'eslint-plugin-unused-imports';
 
 /**
  * @type {import('eslint').Linter.Config}
@@ -8,6 +9,7 @@ const config = {
   plugins: {
     'simple-import-sort': simpleImportSort,
     'import-newlines':    importNewLines,
+    'unused-imports':     unusedImports,
   },
   settings: { 'import/resolver': {
     typescript: {},
@@ -40,7 +42,8 @@ const config = {
         ['^\\u0000'],
       ] },
     ],
-    'import-newlines/enforce': ['error', { items: 3 }],
+    'import-newlines/enforce':          ['error', { items: 3 }],
+    'unused-imports/no-unused-imports': 'error',
   },
 };
 
