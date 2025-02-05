@@ -1,6 +1,7 @@
 import tsParser from '@typescript-eslint/parser';
 import formatConfig from './configs/format.mjs';
 import importConfig from './configs/import.mjs';
+import paddingLineConfig from './configs/padding-line.mjs';
 import restrictConfig from './configs/restrict.mjs';
 
 /**
@@ -20,6 +21,7 @@ const config = [
   ] },
   formatConfig,
   importConfig,
+  paddingLineConfig,
   ...restrictConfig,
 ];
 

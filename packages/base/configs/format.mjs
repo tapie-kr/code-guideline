@@ -264,35 +264,6 @@ const config = {
 
     '@stylistic/padded-blocks': ['error', 'never'],
 
-    '@stylistic/padding-line-between-statements': [
-      'error',
-      {
-        blankLine: 'always',
-        prev:      '*',
-        next:      '*',
-      },
-      {
-        blankLine: 'any',
-        prev:      'import',
-        next:      'import',
-      },
-      {
-        blankLine: 'never',
-        prev:      'export',
-        next:      'export',
-      },
-      {
-        blankLine: 'never',
-        prev:      'const',
-        next:      'const',
-      },
-      {
-        blankLine: 'never',
-        prev:      'let',
-        next:      'let',
-      },
-    ],
-
     '@stylistic/quote-props': ['error', 'as-needed'],
 
     '@stylistic/quotes': [
