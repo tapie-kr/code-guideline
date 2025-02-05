@@ -276,6 +276,21 @@ const config = {
         prev:      'import',
         next:      'import',
       },
+      {
+        blankLine: 'never',
+        prev:      'export',
+        next:      'export',
+      },
+      {
+        blankLine: 'never',
+        prev:      'const',
+        next:      'const',
+      },
+      {
+        blankLine: 'never',
+        prev:      'let',
+        next:      'let',
+      },
     ],
 
     '@stylistic/quote-props': ['error', 'as-needed'],
