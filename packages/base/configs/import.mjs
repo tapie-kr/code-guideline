@@ -44,7 +44,7 @@ const config = {
     ],
     'import-newlines/enforce':          ['error', { items: 3 }],
     'unused-imports/no-unused-imports': 'error',
-    'no-restricted-imports':            ['error', { patterns: ['../*'] }],
+    'no-restricted-imports':            ['error', { patterns: ['../../*'] }],
     'no-restricted-syntax':             [
       'error',
       {
