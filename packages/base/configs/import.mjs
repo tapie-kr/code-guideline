@@ -44,6 +44,14 @@ const config = {
     ],
     'import-newlines/enforce':          ['error', { items: 3 }],
     'unused-imports/no-unused-imports': 'error',
+    'no-restricted-imports':            ['error', { patterns: ['../*'] }],
+    'no-restricted-syntax':             [
+      'error',
+      {
+        selector: ':not(ImportDeclaration[source.value=/\.css$/]) > ImportNamespaceSpecifier',
+        message:  'Importing entire module is not allowed.',
+      },
+    ],
   },
 };
 
