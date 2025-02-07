@@ -31,8 +31,7 @@ const typescriptConfig = {
     '@typescript-eslint/consistent-type-imports': [
       'error',
       {
-        prefer:                  'type-imports',
-        fixStyle:                'inline-type-imports',
+        prefer:                  'no-type-imports',
         disallowTypeAnnotations: true,
       },
     ],
