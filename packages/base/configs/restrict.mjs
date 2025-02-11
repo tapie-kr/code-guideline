@@ -28,13 +28,6 @@ const typescriptConfig = {
         argsIgnorePattern:              '^_',
       },
     ],
-    '@typescript-eslint/consistent-type-imports': [
-      'error',
-      {
-        prefer:                  'no-type-imports',
-        disallowTypeAnnotations: true,
-      },
-    ],
   },
 };
 
